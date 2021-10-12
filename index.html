@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>race</title> 
+    <link type="text/css" rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <div class="start"> 
+        <p class="start_p"></p>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="road_1"> 
+            <img class="racer_1" src="images/car1.svg">
+            <p class="winner_1">  </p> 
+        </div>
+
+        <div class="road_2"> 
+            <img class="racer_2" src="images/car3.png">
+            <p class="winner_2"> </p>
+        </div>
+
+    </div>
+
+    <div class="settings">
+
+        <div class="bets">
+            <p class="balance">БАЛАНС : 100</p>
+
+            <input type="number" placeholder="Ваша ставка" class="bet">
+
+            <div class="wrapper_cars"> 
+                <label for="one">Машина №1</label>
+                <input type="radio" class="bet_car1" name="bet_car" id="one">
+
+                <label for="two">Машина №2</label>
+                <input type="radio" class="bet_car2" name="bet_car" id="two">
+            </div>
+
+            <button onclick="start()" class="enable"> START </button>
+
+        </div>
+    </div>
+
+<script src="script.js"></script> 
+</body> 
+</html> 

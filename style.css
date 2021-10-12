@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.start{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.start p{
+    font-size: 50vh;
+    font-weight: bolder;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: column;
+}
+
+.road_1, .road_2{
+    border: 1px solid black;
+    width: 100%;
+    height: 200px;
+    background-image: url(images/finish.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:relative;
+
+}
+
+.road_1 img, .road_2 img{
+    width:100px; 
+    transition: margin 0.2s;
+    margin: 5% 0;
+}
+
+.road_1 p,.road_2 p{
+    position: absolute;
+    left: 42%;
+    top: 30%;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+.bets .enable{
+    background-color: rgb(43, 255, 0);
+    cursor: pointer;
+}
+
+.bets button{
+    margin-top: 2%;
+    padding: 5%;
+    width: 70%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+
+.bets{
+    background: linear-gradient(to left,pink, purple, red);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    margin: 1% auto;
+    padding: 1%;
+    width: fit-content;
+    font-weight: bolder;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+.bets input{
+    width: 70%;
+    margin: 5%;
+    padding: 3%;
+}
+
+input[type=radio]{
+    border: 2px solid dodgerblue;
+}
+
+.wrapper_cars{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
